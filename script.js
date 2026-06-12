@@ -17,17 +17,21 @@ let spainScreen1 = document.querySelector(".spain-screen1");
 let canadaButton = document.querySelector(".canada");
 let canadaScreen1 = document.querySelector(".canada-screen1");
 
-let argentinaButton = document.querySelector(".usa");
-let argentinaScreen1 = document.querySelector(".usa-screen1");
+let portugalButton = document.querySelector(".portugal");
+let portugalScreen1 = document.querySelector(".portugal-screen1");
 
-let argentinaButton = document.querySelector(".usa");
-let argentinaScreen1 = document.querySelector(".usa-screen1");
-let argentinaButton = document.querySelector(".usa");
-let argentinaScreen1 = document.querySelector(".usa-screen1");
-let argentinaButton = document.querySelector(".usa");
-let argentinaScreen1 = document.querySelector(".usa-screen1");
-let argentinaButton = document.querySelector(".usa");
-let argentinaScreen1 = document.querySelector(".usa-screen1");
+let englandButton = document.querySelector(".england");
+let englandScreen1 = document.querySelector(".england-screen1");
+
+let japanButton = document.querySelector(".japan");
+let japanScreen1 = document.querySelector(".japan-screen1");
+
+let germanyButton = document.querySelector(".germany");
+let germanyScreen1 = document.querySelector(".germany-screen1");
+
+let africaButton = document.querySelector(".africa");
+let africaScreen1 = document.querySelector(".africa-screen1");
+
 let opening = document.querySelector(".story-opening");
 
 usaButton.addEventListener("click", function(){
@@ -35,7 +39,7 @@ usaButton.addEventListener("click", function(){
     opening.style.display = "none";
 })
 
-mexicoButtonButton.addEventListener("click", function(){
+mexicoButton.addEventListener("click", function(){
     mexicoScreen1.style.display = "block";
     opening.style.display = "none";
 })
@@ -76,7 +80,7 @@ japanButton.addEventListener("click", function(){
 })
 
 germanyButton.addEventListener("click", function(){
-    gremanyScreen1.style.display = "block";
+    germanyScreen1.style.display = "block";
     opening.style.display = "none";
 })
 

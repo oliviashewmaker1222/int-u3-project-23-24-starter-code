@@ -146,21 +146,21 @@ body {
     margin: 20px;
 }
 
-/* Style the option buttons */
-button {
-    font-size: 16px;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/*Change picture to have a soccer ball image ontop so i can directly move it later*/
+.option-two-screen{
+    background-image: url("https://thumbs.dreamstime.com/b/soccer-ball-positioned-vibrant-green-grass-field-front-white-goal-net-dark-background-creates-dramatic-contrast-393525472.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
 }
-
-button:hover {
-    background-color: #0056b3;
+.option-two-screen h1{
+    margin: auto;
+    padding: auto;
+    color: white;
+}
+.option-two-screen button{
+    margin-top: 330px;
+    border-radius: 10px;
 }
 
 /* Style the screens for option one and option two */
