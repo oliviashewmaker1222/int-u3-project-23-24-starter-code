@@ -148,18 +148,21 @@ body {
 
 /*Change picture to have a soccer ball image ontop so i can directly move it later*/
 .option-two-screen{
-    background-image: url("https://thumbs.dreamstime.com/b/soccer-ball-positioned-vibrant-green-grass-field-front-white-goal-net-dark-background-creates-dramatic-contrast-393525472.jpg");
+    background-image: url("scene\ 1.jpg");
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 430px;
 }
 .option-two-screen h1{
     margin: auto;
     padding: auto;
     color: white;
 }
+.option-two-screen img{
+    color: white;
+}
 .option-two-screen button{
-    margin-top: 330px;
+    margin-top: 375px;
     border-radius: 10px;
 }
 
