@@ -1,114 +1,91 @@
 // Declare variables below to save the different divs of your story.
 let usaButton = document.querySelector(".usa");
-let usaScreen1 = document.querySelector(".usa-screen1");
 
 let mexicoButton = document.querySelector(".mexico");
-let mexicoScreen1 = document.querySelector(".mexico-screen1");
 
 let franceButton = document.querySelector(".france");
-let franceScreen1 = document.querySelector(".france-screen1");
 
 let argentinaButton = document.querySelector(".argentina");
-let argentinaScreen1 = document.querySelector(".argentina-screen1");
 
 let spainButton = document.querySelector(".spain");
-let spainScreen1 = document.querySelector(".spain-screen1");
 
 let canadaButton = document.querySelector(".canada");
-let canadaScreen1 = document.querySelector(".canada-screen1");
 
 let portugalButton = document.querySelector(".portugal");
-let portugalScreen1 = document.querySelector(".portugal-screen1");
 
 let englandButton = document.querySelector(".england");
-let englandScreen1 = document.querySelector(".england-screen1");
 
 let japanButton = document.querySelector(".japan");
-let japanScreen1 = document.querySelector(".japan-screen1");
 
 let germanyButton = document.querySelector(".germany");
-let germanyScreen1 = document.querySelector(".germany-screen1");
 
-let africaButton = document.querySelector(".africa");
-let africaScreen1 = document.querySelector(".africa-screen1");
-
+let teamNamePlaceholder = document.getElementById('team-name');
 let opening = document.querySelector(".story-opening");
+let transition = document.querySelector(".transition-scene");
+let pitchButton = document.querySelector(".pitch");
+let option = document.querySelector(".option-one");
 
 usaButton.addEventListener("click", function(){
-    usaScreen1.style.display = "block";
+    teamNamePlaceholder.innerText = "USA";
+    transition.style.display = "block";
     opening.style.display = "none";
 })
 
 mexicoButton.addEventListener("click", function(){
-    mexicoScreen1.style.display = "block";
+    teamNamePlaceholder.innerText = "Mexico";
+    transition.style.display = "block";
     opening.style.display = "none";
 })
 
 franceButton.addEventListener("click", function(){
-    franceScreen1.style.display = "block";
+    teamNamePlaceholder.innerText = "France";
+    transition.style.display = "block";
     opening.style.display = "none";
 })
 
 argentinaButton.addEventListener("click", function(){
-    argentinaScreen1.style.display = "block";
+    teamNamePlaceholder.innerText = "Argentina";
+    transition.style.display = "block";
     opening.style.display = "none";
 })
 
 spainButton.addEventListener("click", function(){
-    spainScreen1.style.display = "block";
+    teamNamePlaceholder.innerText = "Spain";
+    transition.style.display = "block";
     opening.style.display = "none";
 })
 
 canadaButton.addEventListener("click", function(){
-    canadaScreen1.style.display = "block";
+    teamNamePlaceholder.innerText = "Canada";
+    transition.style.display = "block";
     opening.style.display = "none";
 })
 
 portugalButton.addEventListener("click", function(){
-    portugalScreen1.style.display = "block";
+    teamNamePlaceholder.innerText = "Portugal";
+    transition.style.display = "block";
     opening.style.display = "none";
 })
 
 englandButton.addEventListener("click", function(){
-    englandScreen1.style.display = "block";
+    teamNamePlaceholder.innerText = "England";
+    transition.style.display = "block";
     opening.style.display = "none";
 })
 
 japanButton.addEventListener("click", function(){
-    japanScreen1.style.display = "block";
+    teamNamePlaceholder.innerText = "Japan";
+    transition.style.display = "block";
     opening.style.display = "none";
 })
 
 germanyButton.addEventListener("click", function(){
-    germanyScreen1.style.display = "block";
+    teamNamePlaceholder.innerText = "Germany";
+    transition.style.display = "block";
     opening.style.display = "none";
 })
 
-africaButton.addEventListener("click", function(){
-    africaScreen1.style.display = "block";
-    opening.style.display = "none";
+pitchButton.addEventListener("click", function(){
+    option.style.display ="block";
+    transition.style.display ="none";
 })
-
-
-
-
-
-
-
-
-// When you're ready to make event handlers, uncomment the code below. 
-//  - Then fill in the blanks with the correct variables.
-
-
-// INSERT_VARIABLE.addEventListener('click', function(){
-
-// });
-
-// INSERT_VARIABLE.addEventListener('click', function(){
-
-// });
-
-
-// INSERT_VARIABLE.addEventListener('click', function(){
-
-// });
