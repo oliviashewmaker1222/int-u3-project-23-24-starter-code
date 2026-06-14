@@ -1,10 +1,19 @@
 /* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
 
-.option-one-screen, 
-.option-two-screen, 
+.option-one, 
 .transition-scene,
-.option-one-end, 
-.option-two-end  {
+.shot-screen,
+.pk-screen,
+.winner-scene, 
+.loser-scene,
+.top-r-scene,
+.top-l-scene,
+.bot-r-scene,
+.bot-l-scene,
+.top-r-scene2,
+.top-l-scene2,
+.bot-r-scene2,
+.bot-l-scene2{
    display:none;
 }
 
@@ -136,7 +145,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 550px;
+    height: 550px;  
     background-image: url("Tunnel.png");
     background-size: cover;
     background-position: center;
@@ -151,61 +160,263 @@ body {
 }
 .transition-scene h1{
     border-radius: 10px;
-    margin-top: 395px;
+    margin-top: 385px;
     color: white;
     text-shadow: 2px 2px 2px black;
     font-size: 20px;
     text-align: center;
 }
 
-/*Change picture to have a soccer ball image ontop so i can directly move it later*/
-.option-two-screen{
-    background-image: url("scene\ 1.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 430px;
-}
-.option-two-screen h1{
-    margin: auto;
-    padding: auto;
-    color: white;
-}
-.option-two-screen img{
-    color: white;
-}
-.option-two-screen button{
-    margin-top: 375px;
-    border-radius: 10px;
-}
-
-/* Style the screens for option one and option two */
-.option-one-screen,
-.option-two-screen,
-.option-one-end,
-.option-two-end {
+.option-one{
     background-color: #fff;
     border: 1px solid #ccc;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
+    height: 550px;  
+    background-image: url("pass.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.option-one h1{
+    margin-top: 30px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 30px;
+    text-align: center;
+}
+.option-one button{
+    margin-top: 390px;
+    font-size: 24px;
+    border-radius: 10px;
 }
 
-/* Style the images in the screens */
-.option-one-screen img,
-.option-two-screen img,
-.option-one-end img,
-.option-two-end img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+/*Change picture to have a soccer ball image ontop so i can directly move it later*/
+.shot-screen{
+    background-image: url("scene\ 1.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 550px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
-
-/* Style the text in the screens */
-.option-one-screen h1,
-.option-two-screen h1,
-.option-one-end h1,
-.option-two-end h1 {
+.shot-screen h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
     font-size: 20px;
-    margin-bottom: 20px;
+    text-align: center; 
+    margin-top: 20px;
+}
+.shot-screen button{
+    margin-top: 465px;
+    border-radius: 10px;
+}
+
+.top-l-scene{
+    height: 550px;
+    background-image: url(top\ left.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.top-l-scene h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    text-align: center; 
+    margin-top: 20px;
+}
+.top-l-scene button{
+    margin-top: 400px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.top-r-scene{
+    height: 550px;
+    background-image: url(top\ right.jpg);
+    background-size: 100% 100%;;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.top-r-scene h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    text-align: center; 
+    margin-top: 20px;
+}
+.top-r-scene button{
+    margin-top: 400px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.bot-r-scene{
+    height: 550px;
+    background-image: url(bottom\ right.jpg);
+    background-size: 100% 100%;;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.bot-r-scene h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    text-align: center; 
+    margin-top: 20px;
+}
+.bot-r-scene button{
+    margin-top: 400px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.bot-l-scene{
+    height: 550px;
+    background-image: url(bottom\ left.jpg);
+    background-size: 100% 100%;;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.bot-l-scene h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    text-align: center; 
+    margin-top: 20px;
+}
+.bot-l-scene button{
+    margin-top: 400px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.loser-scene img{
+    margin: auto;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.winner-scene img{
+    margin: auto;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.pk-screen{
+    background-image: url("scene\ 1.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 550px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.pk-screen h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    text-align: center; 
+    margin-top: 20px;
+}
+.pk-screen button{
+    margin-top: 465px;
+    border-radius: 10px;
+}
+
+.top-l-scene2{
+    height: 550px;
+    background-image: url(top-l.png);
+    background-size: 100% 100%;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.top-l-scene2 h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    text-align: center; 
+    margin-top: 20px;
+}
+.top-l-scene2 button{
+    margin-top: 400px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.top-r-scene2{
+    height: 550px;
+    background-image: url(top-r.png);
+    background-size: 100% 100%;;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.top-r-scene2 h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    text-align: center; 
+    margin-top: 20px;
+}
+.top-r-scene2 button{
+    margin-top: 400px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.bot-r-scene2{
+    height: 550px;
+    background-image: url(bot-r.png);
+    background-size: 100% 100%;;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.bot-r-scene2 h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    text-align: center; 
+    margin-top: 20px;
+}
+.bot-r-scene2 button{
+    margin-top: 400px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.bot-l-scene2{
+    height: 550px;
+    background-image: url(bot-l.png);
+    background-size: 100% 100%;;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.bot-l-scene2 h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    text-align: center; 
+    margin-top: 20px;
+}
+.bot-l-scene2 button{
+    margin-top: 400px;
+    border-radius: 10px;
+    font-size: 30px;
 }
